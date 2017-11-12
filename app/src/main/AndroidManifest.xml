@@ -29,10 +29,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NumbersActivity" />
-        <activity android:name=".PhrasesActivity" />
-        <activity android:name=".FamilyActivity" />
-        <activity android:name=".ColorsActivity"></activity>
+
+
+        <activity android:name=".NumbersActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/category_numbers"/>
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            />
+
+
+        <activity android:name=".PhrasesActivity" android:parentActivityName=".MainActivity"
+            android:label="@string/category_phrases"/>
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            />
+
+
+        <activity android:name=".FamilyActivity" android:parentActivityName=".MainActivity"
+            android:label="@string/category_family"/>
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            />
+
+
+        <activity android:name=".ColorsActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/category_colors"/>
+        <!-- The meta-data tag is required if you support API level 15 and lower -->
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"
+            />
+
     </application>
 
 </manifest>
